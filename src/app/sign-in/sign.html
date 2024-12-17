@@ -1,0 +1,36 @@
+<div class="sign-in-container">
+  <h1>Connexion</h1>
+  <p>Connectez-vous pour accéder à vos informations et gérer vos préférences.</p>
+
+  <!-- User Type Selection -->
+  <div class="form-group">
+    <label for="userType">Êtes-vous un :</label>
+    <select id="userType" [(ngModel)]="userType" class="form-control" required>
+      <option value="">Sélectionnez une option</option>
+      <option value="locateur">Locateur</option>
+      <option value="recherche">Recherche Maison</option>
+    </select>
+  </div>
+
+  <!-- Login Form -->
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="email">E-mail :</label>
+      <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="Entrez votre e-mail" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Entrez votre mot de passe" required>
+    </div>
+    <button type="submit" class="btn">Se connecter</button>
+    <!-- Extra Links --> <div class="extra-options"> 
+      <p>Vous n'avez pas de compte ? <a href="insc">Inscrivez-vous ici</a></p> 
+      <p><a href="oub">Mot de passe oublié ?</a></p>
+     </div>
+  </form>
+
+  <!-- Message display -->
+  <div *ngIf="message" class="message">
+    <p>{{ message }}</p>
+  </div>
+</div>

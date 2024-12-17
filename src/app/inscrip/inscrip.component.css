@@ -1,0 +1,80 @@
+
+
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #c5d8bb; /* Light green background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h1 {
+    color: #2c3e50; /* Dark color for the title */
+    margin-bottom: 20px;
+}
+
+/* Buttons (links) styling */
+.btn-custom {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #2E7D32; /* Bright blue */
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.btn-custom:hover {
+    background-color: #66BB6A; /* Darker blue on hover */
+}
+
+/* Sections, hidden by default */
+.section {
+    display: none;
+    margin-top: 30px;
+}
+
+/* Style for the active link */
+
+
+/* Footer links styling */
+.extra-options a {
+    color: #3498db; /* Matching link color */
+    text-decoration: none;
+}
+
+.extra-options a:hover {
+    text-decoration: underline;
+}
+
+/* Option styling */
+.option {
+    background-color: #f5f5dc; /* Light gray */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option:hover {
+    background-color: #f5f5dc; /* Lighter gray */
+    border-color: #3498db; /* Highlight border */
+}
+
+.option.active {
+    background-color: #3498db; /* Blue background */
+    color: #fff;
+    border-color: #2980b9; /* Darker blue border */
+}

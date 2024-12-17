@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #2c3e50;
+  width: 220px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logo h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 15px 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #3498db;
+  color: white;
+}
+/* src/app/components/property-management/prop.component.css */
+.property-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f7fc;
+}
+
+.property-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.property-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.property-card p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.property-card strong {
+  color: #333;
+}
+
+.property-card .status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.property-card .available {
+  background-color: #8bc34a;
+  color: white;
+}
+
+.property-card .rented {
+  background-color: #f44336;
+  color: white;
+}
+
+.property-card .price {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.property-card .location {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.property-card .description {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #34495e;
+}

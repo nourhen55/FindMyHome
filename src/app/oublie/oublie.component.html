@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot de Passe Oublié</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Mot de Passe Oublié</h1>
+    <p>Entrez votre adresse email pour recevoir un lien de réinitialisation de votre mot de passe.</p>
+
+    <!-- User Type Selection -->
+    <div class="form-group">
+        <label for="userType" class="form-label">Êtes-vous un :</label>
+        <select id="userType" [(ngModel)]="userType" class="form-control" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="locateur">Locateur</option>
+            <option value="etudient">Étudiant</option>
+        </select>
+    </div>
+
+    <!-- Forgot Password Form -->
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="email" class="form-label">Email :</label>
+            <input type="email" id="email" [(ngModel)]="email" name="email" class="form-control" placeholder="Votre email" required>
+        </div>
+        <div class="form-group">
+            <label for="cin" class="form-label">CIN :</label>
+            <input type="text" id="cin" [(ngModel)]="cin" name="cin" class="form-control" placeholder="Votre CIN" required>
+        </div>
+        
+
+        <button type="submit" class="btn-submit">Réinitialiser le mot de passe</button>
+    </form>
+
+    <div class="form-note" [ngClass]="{'success': message === 'Mot de passe réinitialisé avec succès', 'error': message !== '' && message !== 'Mot de passe réinitialisé avec succès'}">
+        <p *ngIf="message">{{ message }}</p>
+    </div>
+    
+</div>
+
+</body>
+</html>

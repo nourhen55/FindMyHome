@@ -1,0 +1,179 @@
+/* Styles globaux */
+* {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
+
+    color: #4a6047;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3 {
+    
+    color: #333;
+    text-align: center;
+    
+  }
+ 
+  /* Section héroïque */
+  .hero-section {
+    background: url('../../assets/home1.jpg') no-repeat center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-section .hero-text {
+    background: rgba(0, 0, 0, 0.6); /* Transparence */
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    color: white;
+
+  }
+  
+  .hero-section p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .hero-section .btn {
+    background-color: #b2c8a6;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .hero-section .btn:hover {
+    background-color: #4a6047;
+  }
+  
+  /* Section caractéristiques */
+  .features-section {
+    padding: 2rem 1rem;
+    background-color: #f5f5dc;
+  }
+  
+  .features-section h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .features {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .feature {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature img {
+    width: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+.homes-header {
+  padding: 2rem 1rem;
+  background-color: #f5f5dc;
+  text-align: center;
+}
+
+.homes-header h2 {
+  margin-bottom: 1.5rem;
+  color: #4a6047;
+}
+
+.homes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background-color: #f5f5dc;
+  
+}
+
+.home-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.home-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.home-card h3 {
+  font-size: 1.2rem;
+  color: #4a6047;
+  margin: 1rem 1rem 0.5rem;
+}
+
+.home-card p {
+  margin: 0.5rem 1rem;
+  color: #555;
+}
+
+.home-card strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.homes-header .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background: #4a6047;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  
+}
+
+.homes-header .btn:hover {
+  background: #4a6047;
+}
+body#all {
+  background-color: #f5f5dc;
+}
+.hero-section, 
+.homes-section, 
+.features-section {
+  background-color: transparent;
+  background-color: #f5f5dc;
+}

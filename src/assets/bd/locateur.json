@@ -1,0 +1,100 @@
+{
+  "locateur": [
+    {
+      "id": "ff5f",
+      "cin": "14040571",
+      "prenom": "John",
+      "email": "henn5722@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "ff60",
+      "cin": "14040572",
+      "prenom": "Alice",
+      "email": "alice@example.com",
+      "password": "password123",
+      "confirmPassword": "password123"
+    },
+    {
+      "id": "ff61",
+      "cin": "14040573",
+      "prenom": "Bob",
+      "email": "bob@example.com",
+      "password": "1234abcd",
+      "confirmPassword": "1234abcd"
+    },
+    {
+      "id": "ff62",
+      "cin": "14040574",
+      "prenom": "Charlie",
+      "email": "charlie@example.com",
+      "password": "mypassword",
+      "confirmPassword": "mypassword"
+    },
+    {
+      "id": "ff63",
+      "cin": "14040575",
+      "prenom": "David",
+      "email": "david@example.com",
+      "password": "password456",
+      "confirmPassword": "password456"
+    },
+    {
+      "id": "ff64",
+      "cin": "14040576",
+      "prenom": "Eva",
+      "email": "eva@example.com",
+      "password": "12345abc",
+      "confirmPassword": "12345abc"
+    },
+    {
+      "id": "ff65",
+      "cin": "14040577",
+      "prenom": "Frank",
+      "email": "frank@example.com",
+      "password": "qwerty123",
+      "confirmPassword": "qwerty123"
+    },
+    {
+      "id": "ff66",
+      "cin": "14040578",
+      "prenom": "Grace",
+      "email": "grace@example.com",
+      "password": "pass1234",
+      "confirmPassword": "pass1234"
+    },
+    {
+      "id": "ff67",
+      "cin": "14040579",
+      "prenom": "Hannah",
+      "email": "hannah@example.com",
+      "password": "abcd1234",
+      "confirmPassword": "abcd1234"
+    },
+    {
+      "id": "ff68",
+      "cin": "14040580",
+      "prenom": "Isaac",
+      "email": "isaac@example.com",
+      "password": "testpassword",
+      "confirmPassword": "testpassword"
+    },
+    {
+      "id": "ff69",
+      "cin": "14040581",
+      "prenom": "Jack",
+      "email": "jack@example.com",
+      "password": "mypassword123",
+      "confirmPassword": "mypassword123"
+    },
+    {
+      "id": "ff6a",
+      "cin": "14040582",
+      "prenom": "Kathy",
+      "email": "kathy@example.com",
+      "password": "123kathy",
+      "confirmPassword": "123kathy"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<div class="home-details">
+    <h2>{{ homeDetails?.name }}</h2>
+    
+    <!-- Basic Info Section -->
+    <p><strong>Emplacement:</strong> {{ homeDetails?.location }}</p>
+    <p><strong>Description:</strong> {{ homeDetails?.description }}</p>
+    <p><strong>Prix:</strong> {{ homeDetails?.price }} d</p>
+    <p><strong>Équipements:</strong> {{ homeDetails?.amenities.join(', ') }}</p>
+    <p><strong>Disponibilité:</strong> {{ homeDetails?.availability }}</p>
+  
+    <!-- Gallery Section -->
+    <div *ngIf="homeDetails?.gallery?.length">
+      <h3>Galerie des Locations</h3>
+      <div class="gallery">
+        <img *ngFor="let image of homeDetails?.gallery" [src]="image" alt="Gallery Image" />
+      </div>
+    </div>
+    
+    <!-- Contact Section -->
+    <h3>Contact Locataire</h3>
+    <p><strong>Téléphone:</strong> {{ homeDetails?.contact?.phone }}</p>
+    <p><strong>Email:</strong> <a href="mailto:{{ homeDetails?.contact?.email }}">{{ homeDetails?.contact?.email }}</a></p>
+    <p><strong>Site Web:</strong> <a href="https://{{ homeDetails?.contact?.website }}" target="_blank">{{ homeDetails?.contact?.website }}</a></p>
+    <p><strong>Horaires de Visite:</strong> {{ homeDetails?.contact?.visiting_hours }}</p>
+  </div>
+  <div class="evaluation">
+    <h3>Évaluation</h3>
+    
+    <!-- Rating Stars -->
+    <div class="rating">
+      <span class="star filled">★</span>
+      <span class="star filled">★</span>
+      <span class="star filled">★</span>
+      <span class="star filled">★</span>
+      <span class="star">★</span>
+    </div>
+    
+    <p><strong>Moyenne des Évaluations:</strong> 4/5</p>
+    
+    <!-- Reviews Section -->
+    <div class="reviews">
+      <h4>Commentaires des Locataires</h4>
+      <ul>
+        <li>
+          <p><strong>Jean Dupont</strong> - 01 Jan 2024</p>
+          <p>Superbe endroit, très bien situé!</p>
+        </li>
+        <li>
+          <p><strong>Marie Durand</strong> - 15 Déc 2023</p>
+          <p>Très confortable et bien équipé.</p>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Comment Submission Form -->
+    <div class="comment-form">
+      <h4>Ajouter un Commentaire</h4>
+      <textarea placeholder="Votre commentaire..." rows="4"></textarea>
+      <button class="submit-comment">Envoyer</button>
+    </div>
+  
+    <!-- Location Request Button -->
+    <div class="request-location">
+      <button class="request-btn" (click)="submitRequest()">Demander une Location</button>
+      <!-- Message that will be displayed after clicking the button -->
+      <div *ngIf="isRequestSubmitted" class="request-message">
+        <p>Votre demande a été envoyée. En attente de réponse...</p>
+      </div>
+    </div>
+  </div>
+  

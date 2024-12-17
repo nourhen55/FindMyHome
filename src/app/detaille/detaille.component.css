@@ -1,0 +1,266 @@
+/* Home Details Section */
+.home-details {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9e8;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Title Styling */
+.home-details h2 {
+  font-size: 2rem;
+  color: #4a6047;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Basic Information Section */
+.home-details p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.home-details strong {
+  color: #4a6047;
+  font-weight: bold;
+}
+
+/* Gallery Section */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Contact Section */
+.home-details h3 {
+  font-size: 1.5rem;
+  color: #4a6047;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.home-details a {
+  color: #4a6047;
+  text-decoration: none;
+}
+
+.home-details a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Info Style */
+.home-details p a {
+  color: #4a6047;
+  font-weight: bold;
+}
+
+.home-details p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .home-details {
+    padding: 20px;
+  }
+
+  .home-details h2 {
+    font-size: 1.8rem;
+  }
+
+  .home-details p {
+    font-size: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-details {
+    padding: 15px;
+  }
+
+  .home-details h2 {
+    font-size: 1.6rem;
+  }
+
+  .home-details p {
+    font-size: 0.95rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: 180px;
+  }
+}
+
+/* Evaluation Section */
+.evaluation {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #F5F5DC;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.evaluation h3 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.rating {
+  display: flex;
+  gap: 8px;
+  font-size: 28px;
+  color: #dcdde1; /* Light gray for unfilled stars */
+  margin-bottom: 15px;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.star.filled {
+  color: #f39c12; /* Yellow color for filled stars */
+}
+
+.star:hover {
+  color: #f39c12; /* Yellow color on hover */
+}
+
+.reviews {
+  margin-top: 25px;
+}
+
+.reviews h4 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.reviews ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.reviews ul li {
+  background-color: #cfcfaa;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #3498db; /* Blue left border for emphasis */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reviews ul li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reviews ul li p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin: 0;
+}
+
+.reviews ul li strong {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Comment Submission Form */
+.comment-form {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #cfcfaa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form h4 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+.comment-form .submit-comment {
+  background-color: #4A6047;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.comment-form .submit-comment:hover {
+  background-color: #3f503c;
+}
+
+/* Location Request Button */
+.request-location {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.request-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.request-btn:hover {
+  background-color: #c0392b;
+}
+/* Request Message Style */
+.request-message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f39c12; /* Yellow background */
+  color: #fff; /* White text */
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

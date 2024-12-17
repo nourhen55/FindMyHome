@@ -1,0 +1,99 @@
+/* General container styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #4a6047;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading styles */
+.container h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Label styles */
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f2f2f2;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Input and textarea styles */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #66bb6a;
+  outline: none;
+}
+
+/* Button styles */
+button {
+  background-color: #66bb6a;
+  color: #ffffff;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #558b2f;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Success message styles */
+.success-message {
+  background-color: #d4edda;
+  color: #3c763d;
+  border: 1px solid #c3e6cb;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Error message styles */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+}

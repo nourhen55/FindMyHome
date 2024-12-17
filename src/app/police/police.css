@@ -1,0 +1,101 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and basic text styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main section */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Privacy policy section */
+.privacy-policy {
+    color: #4a6047;
+}
+
+h1, h2 {
+    color: #4a6047;
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4a6047;
+    padding-bottom: 5px;
+}
+
+/* Paragraph and list styles */
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #4a6047;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4a6047;
+    color: #f5f5dc;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,109 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; /* Soft green background */
+    color: #2e7d32; /* Dark green text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    text-align: center;
+    color: #2e7d32; /* Dark green for the heading */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+label {
+    font-size: 1rem;
+    color: #2e7d32; /* Dark green text */
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #4caf50; /* Green border */
+    border-radius: 5px;
+    background-color: #f1f8e9; /* Light greenish background for inputs */
+}
+
+input:focus {
+    border-color: #2e7d32; /* Dark green border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.5); /* Glow effect */
+}
+
+button {
+    padding: 12px;
+    background-color: #2e7d32; /* Dark green button */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:disabled {
+    background-color: #a5d6a7; /* Light green for disabled buttons */
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #1b5e20; /* Darker green on hover */
+    transform: scale(1.02); /* Slight enlargement */
+}
+
+/* Validation styles */
+div *ngIf {
+    color: #d32f2f; /* Red text for validation errors */
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+}
+.success-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  

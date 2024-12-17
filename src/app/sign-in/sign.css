@@ -1,0 +1,106 @@
+/* Main container for the login form */
+body{
+  background-color: #c5d8bb;
+}
+.sign-in-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #b2c8a6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading and description styles */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Style for form-group to space out form elements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-group label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Input field styling */
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a6047;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4a6047;
+}
+
+/* Extra links section */
+.extra-options {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.extra-options a {
+  color: #4a6047;
+  text-decoration: none;
+}
+
+.extra-options a:hover {
+  text-decoration: underline;
+}
+.message {
+  font-size: 1.5rem; /* Larger text */
+  color: #ffffff;    /* White text color */
+  background-color: #4caf50; /* Green background for success messages */
+  padding: 15px;     /* Add padding for spacing */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 600px;   /* Limit the width */
+  margin: 20px auto;  /* Center the message */
+  text-align: center;  /* Center align the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  font-weight: bold;  /* Bold text */
+  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.message p {
+  margin: 0; /* Remove margin around paragraph */
+}
+.success {
+  background-color: #4caf50; /* Green for success */
+}
+
+.error {
+  background-color: #f44336; /* Red for error */
+}

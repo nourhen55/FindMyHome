@@ -1,0 +1,74 @@
+{
+  "messages": [
+    {
+      "id": "1",
+      "name": "Alice Brown",
+      "avatar": "https://example.com/avatars/alice.jpg",
+      "subject": "Request for a demo",
+      "text": "I would like to schedule a demo for your product.I would like to schedule a demo for your productI would like to schedule a demo for your productI would like to schedule a demo for your productI would like to schedule a demo for your productI would like to schedule a demo for your product",
+      "email": "alice.brown@example.com",
+      "date": "2024-12-05T14:00:00Z",
+      "isExpanded": false
+    },
+    {
+      "id": "2",
+      "name": "Bob White",
+      "avatar": "https://example.com/avatars/bob.jpg",
+      "subject": "Billing inquiry",
+      "text": "I have a question about my recent bill.",
+      "email": "bob.white@example.com",
+      "date": "2024-12-05T15:00:00Z",
+      "isExpanded": false
+    },
+    {
+      "id": "3",
+      "name": "Charlie Black",
+      "avatar": "https://example.com/avatars/charlie.jpg",
+      "subject": "Feedback on your service",
+      "text": "I wanted to share my feedback on your customer service experience.",
+      "email": "charlie.black@example.com",
+      "date": "2024-12-05T16:00:00Z",
+      "isExpanded": false
+    },
+    {
+      "id": "4",
+      "name": "Nourhen",
+      "avatar": "https://example.com/avatars/nourhen.jpg",
+      "subject": "Suggestions for improvement",
+      "text": "I would suggest adding more choices for the service.",
+      "email": "henn5722@gmail.com",
+      "date": "2024-12-06T16:27:51.918Z",
+      "isExpanded": false
+    },
+    {
+      "id": "5",
+      "name": "Aya",
+      "avatar": "https://example.com/avatars/aya.jpg",
+      "subject": "Inquiry about 9al9a",
+      "text": "I have a question regarding 9al9a.",
+      "email": "aya@gmail.com",
+      "date": "2024-12-07T10:05:04.873Z",
+      "isExpanded": false
+    },
+    {
+      "id": "6",
+      "name": "HH",
+      "avatar": "https://example.com/avatars/hh.jpg",
+      "subject": "Issue with the system",
+      "text": "I encountered an issue with the system.",
+      "email": "john@example.com",
+      "date": "2024-12-07T19:25:25.496Z",
+      "isExpanded": false
+    },
+    {
+      "id": "7",
+      "name": "Sarra",
+      "avatar": "https://example.com/avatars/sarra.jpg",
+      "subject": "Question about service",
+      "text": "I have some questions about your service.",
+      "email": "sarra@example.com",
+      "date": "2024-12-07T19:27:57.545Z",
+      "isExpanded": false
+    }
+  ]
+}

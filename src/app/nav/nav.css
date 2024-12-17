@@ -1,0 +1,129 @@
+
+    /* Couleur personnalisée */
+    .bg-green {
+      background-color: #4a6047; /* Vert olive foncé */
+    }
+
+    /* Navbar */
+    .navbar-dark .navbar-nav .nav-link {
+      color: white; /* Couleur des liens */
+      font-weight: bold;
+      transition: color 0.3s, background-color 0.3s;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #4a6047; /* Vert olive foncé */
+      background-color: #b2c8a6; /* Vert clair */
+      border-radius: 5px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active {
+      background-color: #b2c8a6;
+      color: #4a6047;
+      border-radius: 5px;
+    }
+
+    /* Section avec image de fond */
+    #bg {
+      width: 100%;
+      height: 250px;
+      background-image: url(../../assets/flu.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      animation: moveBackground 55s linear infinite;
+    }
+
+    /* Animation de défilement de l'image */
+    @keyframes moveBackground {
+      0% { background-position: center top; }
+      50% { background-position: center bottom; }
+      100% { background-position: center top; }
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      display: flex;
+      align-items: center; /* Vertically center the content */
+      justify-content: flex-end; /* Align content to the right */
+    }
+
+    .hero .logo {
+      animation: bounce 2s infinite ease-in-out;
+      max-width: 150px;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .hero .content {
+      text-align: center;
+      padding-right: 180px; /* Ensure the text does not overlap the logo */
+    }
+
+    /* Overlay semi-transparent */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(106, 106, 106, 0.5); /* Overlay sombre transparent */
+      z-index: 1;
+    }
+
+    /* Contenu du texte */
+    .content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Ombre douce sur le texte */
+    }
+
+    .content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      animation: fadeIn 2s ease-in-out; /* Animation d'apparition */
+    }
+
+    .content h2 {
+      font-size: 1.5rem;
+      font-weight: lighter;
+      color: #b2c8a6; /* Vert clair */
+    }
+
+    .highlight {
+      color: #b2c8a6; /* Accent sur une partie du texte */
+      font-weight: bold;
+    }
+
+    /* Animation d'apparition */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive pour les petits écrans */
+    @media (max-width: 800px) {
+      .hero {
+        height: 300px;
+      }
+
+      .content h1 {
+        font-size: 2rem;
+      }
+
+      .content h2 {
+        font-size: 1.2rem;
+      }
+    }
+  

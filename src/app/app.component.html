@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyAngularApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <!-- Only display <appnav> if not on /admine or /acc route -->
+  <appnav *ngIf="currentRoute !== '/admine' && currentRoute !== '/acc' && currentRoute !== '/prop'  && currentRoute !== '/mess'"></appnav>
+
+  <!-- The content of the page (router-outlet) -->
+  <router-outlet></router-outlet>
+
+  <!-- Only display <app-aboutus> if not on /admine or /acc route -->
+  <app-aboutus *ngIf="currentRoute !== '/admine' && currentRoute !== '/acc' && currentRoute !== '/prop'  && currentRoute !== '/mess'"></app-aboutus>
+</body> 
+</html>

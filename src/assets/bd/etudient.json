@@ -1,0 +1,124 @@
+{
+  "etudiants": [
+    {
+      "id": "5050",
+      "cin": "1111",
+      "prenom": "John",
+      "email": "henn5722@gmail.com",
+      "phone": "46302202",
+      "cartepancreas": "PANCREAS123",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "5051",
+      "cin": "1112",
+      "prenom": "Alice",
+      "email": "alice@example.com",
+      "phone": "46302203",
+      "cartepancreas": "PANCREAS124",
+      "password": "password123",
+      "confirmPassword": "password123"
+    },
+    {
+      "id": "5052",
+      "cin": "1113",
+      "prenom": "Bob",
+      "email": "bob@example.com",
+      "phone": "46302204",
+      "cartepancreas": "PANCREAS125",
+      "password": "1234abcd",
+      "confirmPassword": "1234abcd"
+    },
+    {
+      "id": "5053",
+      "cin": "1114",
+      "prenom": "Charlie",
+      "email": "charlie@example.com",
+      "phone": "46302205",
+      "cartepancreas": "PANCREAS126",
+      "password": "mypassword",
+      "confirmPassword": "mypassword"
+    },
+    {
+      "id": "5054",
+      "cin": "1115",
+      "prenom": "David",
+      "email": "david@example.com",
+      "phone": "46302206",
+      "cartepancreas": "PANCREAS127",
+      "password": "password456",
+      "confirmPassword": "password456"
+    },
+    {
+      "id": "5055",
+      "cin": "1116",
+      "prenom": "Eva",
+      "email": "eva@example.com",
+      "phone": "46302207",
+      "cartepancreas": "PANCREAS128",
+      "password": "12345abc",
+      "confirmPassword": "12345abc"
+    },
+    {
+      "id": "5056",
+      "cin": "1117",
+      "prenom": "Frank",
+      "email": "frank@example.com",
+      "phone": "46302208",
+      "cartepancreas": "PANCREAS129",
+      "password": "qwerty123",
+      "confirmPassword": "qwerty123"
+    },
+    {
+      "id": "5057",
+      "cin": "1118",
+      "prenom": "Grace",
+      "email": "grace@example.com",
+      "phone": "46302209",
+      "cartepancreas": "PANCREAS130",
+      "password": "pass1234",
+      "confirmPassword": "pass1234"
+    },
+    {
+      "id": "5058",
+      "cin": "1119",
+      "prenom": "Hannah",
+      "email": "hannah@example.com",
+      "phone": "46302210",
+      "cartepancreas": "PANCREAS131",
+      "password": "abcd1234",
+      "confirmPassword": "abcd1234"
+    },
+    {
+      "id": "5059",
+      "cin": "1120",
+      "prenom": "Isaac",
+      "email": "isaac@example.com",
+      "phone": "46302211",
+      "cartepancreas": "PANCREAS132",
+      "password": "testpassword",
+      "confirmPassword": "testpassword"
+    },
+    {
+      "id": "5060",
+      "cin": "1121",
+      "prenom": "Jack",
+      "email": "jack@example.com",
+      "phone": "46302212",
+      "cartepancreas": "PANCREAS133",
+      "password": "mypassword123",
+      "confirmPassword": "mypassword123"
+    },
+    {
+      "id": "5061",
+      "cin": "1122",
+      "prenom": "Kathy",
+      "email": "kathy@example.com",
+      "phone": "46302213",
+      "cartepancreas": "PANCREAS134",
+      "password": "123kathy",
+      "confirmPassword": "123kathy"
+    }
+  ]
+}

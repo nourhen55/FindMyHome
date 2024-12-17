@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Liste des Demandes de Location</h1>
+
+  <div *ngFor="let request of requests" class="request-card">
+    <h2>{{ request.name }}</h2>
+
+    <div class="status-card">
+      <h3>Status de la Demande : <span [ngClass]="request.status">{{ request.status | uppercase }}</span></h3>
+      <p>{{ request.message }}</p>
+    </div>
+
+    <div class="buttons">
+      <button *ngIf="request.status === 'accepted'" (click)="navigateToPayment(request.id)">Payer</button>
+      <button (click)="deleteRequest(request.id)">Supprimer</button> <!-- Delete button -->
+    </div>
+  </div>
+</div>

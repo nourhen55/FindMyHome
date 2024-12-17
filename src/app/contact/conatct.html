@@ -1,0 +1,30 @@
+<br><br>
+<div class="container">
+  <h2>Ajouter un Message</h2>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label for="name">Nom</label>
+    <input id="name" formControlName="name" />
+
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" type="email" />
+
+    <label for="subject">Sujet</label>
+    <input id="subject" formControlName="subject" />
+
+    <label for="message">Message</label>
+    <textarea id="message" formControlName="message"></textarea>
+
+    <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+  </form>
+
+  <!-- Afficher le message de succès -->
+  <div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
+  </div>
+
+  <!-- Afficher le message d'erreur -->
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+</div>
+<br><br>

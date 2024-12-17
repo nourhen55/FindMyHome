@@ -1,0 +1,116 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+ background-color: #f5f5dc;
+  padding: 0;
+  
+}
+
+/* Carrousel Section */
+.feature-carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 5rem ; /* Assurez-vous que la marge soit bien gérée pour la section carrousel */
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  text-align: center;
+}
+
+.carousel-slide img {
+  width: 300px;
+  height: 50%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.feature-description {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-description h3 {
+  margin-bottom: 0.5rem;
+  color: #4a6047;
+}
+
+.feature-description p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Buttons */
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.prev-btn, .next-btn {
+  background-color: #4a6047;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: #b2c8a6;
+}
+
+/* Fonctionnalités Section */
+.fonctionnalites-section {
+  max-width: 1200px;
+  margin: -200px auto 40px; /* Réduire la marge supérieure pour rapprocher les sections */
+  background: #b2c8a6;
+  padding: 30px 40px; /* Réduire un peu les paddings internes */
+  border-radius: 10px;
+  box-shadow: 5px 5px 110px rgba(0, 36, 1, 0.1);
+}
+
+.fonctionnalites-content {
+  text-align: left;
+}
+
+.fonctionnalites-content h2 {
+  font-size: 2rem;
+  color: #4a6047;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fonctionnalites-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .fonctionnalites-section {
+    padding: 20px;
+  }
+
+  .fonctionnalites-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .fonctionnalites-content p {
+    font-size: 1rem;
+  }
+}

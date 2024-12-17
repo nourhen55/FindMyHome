@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Admin Panel</title>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <div class="logo">
+      <h2>Admin Panel</h2>
+    </div>
+    <ul class="nav-links">
+      <li><a href="admine" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+      <li><a href="acc"><i class="fas fa-users"></i> Users</a></li>
+      <li><a href="prop"><i class="fas fa-home"></i> Properties</a></li>
+      <li><a href="mess"><i class="fas fa-envelope"></i> Messages</a></li>
+    </ul>
+  </div>
+<!-- src/app/components/property-management/prop.component.html -->
+<!-- src/app/components/property-management/prop.component.html -->
+<div class="property-container">
+  <div *ngFor="let property of properties" class="property-card">
+    <h3>{{ property.name }}</h3>
+
+    <!-- Display all details of the house -->
+    <p><strong>ID:</strong> {{ property.id }}</p>
+    <p><strong>Name:</strong> {{ property.name }}</p>
+    <p><strong>Status:</strong> {{ property.status }}</p>
+    <p><strong>Description:</strong> {{ property.description || 'No description available' }}</p>
+    <p><strong>Location:</strong> {{ property.location || 'No location available' }}</p>
+    <p><strong>Price:</strong> ${{ property.price || 'Not listed' }}</p>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<section id="liste" class="home-list-section">
+  <h1 class="section-title">Liste des Logements Disponibles</h1>
+
+  <!-- Formulaire de recherche et de filtrage -->
+  <div class="search-filter">
+    <input 
+      type="text" 
+      [(ngModel)]="searchInput" 
+      (input)="filterHomes()"
+      placeholder="Rechercher par nom ou type..." 
+      class="search-input" 
+    />
+    <select [(ngModel)]="homeType" (change)="filterHomes()" class="filter-select">
+      <option value="all">Tous les types de logements</option>
+      <option value="S+0">S+0</option>
+      <option value="S+1">S+1</option>
+      <option value="S+2">S+2</option>
+      <option value="S+3">S+3</option>
+    </select>
+    <select [(ngModel)]="proximity" (change)="filterHomes()" class="filter-select">
+      <option value="all">Proximité avec les instituts</option>
+      <option value="Faculté de Médecine de Sousse">Faculté de Médecine de Sousse</option>
+      <option value="Faculté des Lettres et des Sciences Humaines">Faculté des Lettres et des Sciences Humaines</option>
+      <option value="Institut Supérieur d'Informatique et de Mathématiques de Sousse">Institut Supérieur d'Informatique et de Mathématiques de Sousse</option>
+    </select>
+    <select [(ngModel)]="priceRange" (change)="filterHomes()" class="filter-select">
+      <option value="all">Tous les prix</option>
+      <option value="low">0d - 500d</option>
+      <option value="medium">501d - 1000d</option>
+      <option value="high">1001d - 2000d</option>
+    </select>
+  </div>
+
+  <div class="home-grid">
+    <div *ngFor="let home of filteredHomes" class="home-card">
+      <img [src]="home.image" [alt]="home.name" class="home-image" />
+      <div class="home-details">
+        <h3 class="home-title">{{ home.name }}</h3>
+        <p class="home-info">Proximité: {{ home.proximity }} ({{ home.distance }} mètres)</p>
+        <p class="home-price"><strong>Prix: {{ home.price }}d</strong></p>
+      <a [routerLink]="['/detaille', home.id]" class="btn-details">Voir Détails</a>
+      </div>
+    </div>
+  </div>
+</section>

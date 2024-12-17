@@ -1,0 +1,44 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Admin Panel</title>
+</head>
+<body><!-- Sidebar -->
+<div class="sidebar">
+  <div class="logo">
+    <h2>Admin Panel</h2>
+  </div>
+  <ul class="nav-links">
+    <li><a href="admine" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+    <li><a href="acc"><i class="fas fa-users"></i> Users</a></li>
+    <li><a href="prop"><i class="fas fa-home"></i> Properties</a></li>
+    <li><a href="mess"><i class="fas fa-envelope"></i> Messages</a></li>
+  </ul>
+</div>
+
+<!-- Message Container -->
+<div *ngFor="let message of messages" class="message-card">
+  <div class="message-header">
+    <img [src]="message.avatar" alt="Avatar" class="message-avatar">
+    <div>
+      <h3>{{ message.name }}</h3>
+      <p class="message-subject">{{ message.subject }}</p>
+    </div>
+  </div>
+
+  <div class="message-body">
+    <p class="message-preview">{{ message.text | slice:0:100 }}...</p>
+    <button (click)="toggleMessage(message.id)" class="expand-btn">
+      {{ message.isExpanded ? 'Collapse' : 'Read More' }}
+    </button>
+
+    <!-- Collapsible Message Details -->
+    <div *ngIf="message.isExpanded" class="message-details">
+      <p>{{ message.text }}</p>
+      <p><strong>Email:</strong> {{ message.email }}</p>
+      <p><strong>Date:</strong> {{ message.date | date: 'medium' }}</p>
+    </div>
+  </div>
+</div>
+</body>

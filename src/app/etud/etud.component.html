@@ -1,0 +1,59 @@
+<div class="container">
+  <h2>Ajouter un Étudiant</h2>
+  <form [formGroup]="etudiantForm" (ngSubmit)="onSubmit()">
+    <label for="cin">CIN</label>
+    <input id="cin" formControlName="cin" (blur)="checkCin()" />
+    <div *ngIf="cinExists" class="error">
+      CIN already exists. Please use a different CIN.
+    </div>
+
+    <div>
+      <label for="prenom">Prénom :</label>
+      <input id="prenom" formControlName="prenom" />
+      <div *ngIf="etudiantForm.get('prenom')?.invalid && etudiantForm.get('prenom')?.touched">
+        Le prénom est requis.
+      </div>
+    </div>
+    
+    <div>
+      <label for="email">Email :</label>
+      <input id="email" formControlName="email" type="email" />
+      <div *ngIf="etudiantForm.get('email')?.invalid && etudiantForm.get('email')?.touched">
+        Un email valide est requis.
+      </div>
+    </div>
+
+    <div>
+      <label for="phone">Téléphone :</label>
+      <input id="phone" formControlName="phone" />
+    </div>
+
+    <div>
+      <label for="cartepancreas">Carte Pancréas :</label>
+      <input id="cartepancreas" formControlName="cartepancreas" />
+    </div>
+
+    <div>
+      <label for="password">Mot de passe :</label>
+      <input id="password" formControlName="password" type="password" />
+    </div>
+
+    <div>
+      <label for="confirmPassword">Confirmer le mot de passe :</label>
+      <input id="confirmPassword" formControlName="confirmPassword" type="password" />
+      <div *ngIf="etudiantForm.hasError('passwordMismatch') && etudiantForm.get('confirmPassword')?.touched">
+        Les mots de passe ne correspondent pas.
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="etudiantForm.invalid || cinExists">Ajouter</button>
+  </form>
+
+  <div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+</div>
